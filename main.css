@@ -1,0 +1,173 @@
+
+
+		@font-face {
+			font-family: "Inter";
+			src: url("font/inter.ttf");
+		}
+
+		@font-face {
+			font-family: "Bating";
+			src: url("font/bating.ttf");
+		}
+
+		@font-face {
+			font-family: "lora";
+			src: url("font/lora-italic.ttf");
+		}
+
+		@font-face {
+			font-family: "lora";
+			src: url("font/lora.ttf");
+		}
+
+		@font-face {
+			font-family: "technoRace";
+			src: url("font/technoRace.otf");
+		}
+
+		navbar {
+        	font-family: "Inter";
+        }
+
+		body {
+			margin: 0px;
+			padding: 0px;
+			background-color: #FFFCE1;
+			font-family: "Inter", san-serif; 
+		}
+
+		h1 {
+			font-family: "technoRace", san-serif; 
+			margin: 0px;
+		}
+
+
+		h2 {
+			margin: 0px;
+			padding: 0px;
+			font-family: "lora";
+			font-size: 2em;
+			margin-top: 50px;
+		}
+
+		h3 {
+			font-family: "lora";
+			font-size: 3em;
+		}
+
+		p {
+			margin: 0px;
+			padding: 0px;
+			font-family: "bating", san-serif;
+			font-family: "lora";
+			font-size: 2em;
+			margin-top: 50px;
+		}
+
+		#header {
+			background-image: url('img/banner.jpg');
+			height: 500px;
+			background-size: cover;
+			background-position: center;
+			text-align: center;
+			line-height: 200px;
+		}
+
+
+		#wrapper {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			width: 800px;
+		}
+
+		#main-content {
+			width:800px;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px;
+		}
+	
+
+		#main, #navbar {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#navbar ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#navbar ul li {
+			background-color: powderblue;
+			opacity: 0.6;
+			width: 180px;
+			text-align: center;
+			position: relative;
+		}
+
+		#navbar > ul {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		#navbar a {
+			display: block;
+			text-decoration: none;
+			color: darkblue;
+			height: 50px;
+			line-height: 50px;
+		}
+
+
+		#navbar ul ul {
+			display: none;
+/*			visibility: hidden;*/
+			position: absolute;
+		}
+
+		#navbar li:hover > ul {
+			display: block;
+		}
+
+		#navbar li:hover {
+			background-color: limegreen;
+		}
+
+		#nav {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			background-color:lightblue;
+			z-index: 1;
+		}
+
+		#header {
+            min-height: 850px;
+            background: transparent url('img/porter2.jpg') no-repeat fixed center;
+            background-size: cover;
+            position: relative;
+        }
+        h1 {
+            color: deeppink;
+/*            text-shadow: 0px 0px 2px #000;*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 200px;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+        #footer {
+        	color: whitesmoke;
+        	background-color: deeppink;
+        	height: 300px;
+        	font-size: 40px;
+        	padding-left: 40px;
+        	padding-top: 10px;
+        }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <meta name="description2" content="A gallery featuring Porter Robinson(such as magazine features and concert photos) and his works">
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="A website about Porter Robinson, an American EDM producer. Outlines his music, his genre, and his achievements">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css" rel="stylesheet">
+    
+
+    <style>
+        #main {
+            width: 1300px;
+            margin: auto;
+        }
+        #header {
+            min-height: 600px;
+        }
+
+
+        #main-content {
+            width:770px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 20px;
+
+        }
+        .gallery {
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        .gallery a {
+            margin: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            height: 2000px;
+            width: auto;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .gallery a img{
+            height: 300px;
+            width: auto;
+            object-fit: cover;
+        }
+
+        .gallery a img:hover {
+            transform:scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>GALLERY</h1>
+    </div>
+
+  <div id="nav">
+    <div id="navbar">
+        <ul>
+            <li>
+                <a href="index.html">H O M E </a>
+                <ul>
+                    <li><a href="index.html#about">A B O U T</a></li>
+                    <li><a href="index.html#music">M U S I C</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="gallery.html">G A L L E R Y </a>
+            </li>
+            <li>
+                <a href="lyrics.html">L Y R I C I S M</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="main">
+
+    <p> What sets Porter apart is his willingness to evolve and experiment with his musical style, constantly pushing the boundaries of what electronic music can be. From the euphoric melodies of "Worlds" to the introspective journey of "Nurture," Robinson's discography reflects his growth as an artist and resonates deeply with his fans, who appreciate his authenticity and vulnerability. The evolution of his style and music can be illustrated in the gallery below. </p>
+
+    <p> </p>
+
+<div class="gallery">
+    <a href="img/gallery/pink.jpeg">
+        <img src="img/gallery/pink.jpeg" alt="pink">
+    </a>
+    <a href="img/gallery/pr4.jpeg">
+        <img src="img/gallery/pr4.jpeg" alt="pr4">
+    </a>
+    <a href="img/gallery/ghost.jpeg">
+        <img src="img/gallery/ghost.jpeg" alt="ghost">
+    </a>
+    <a href="img/gallery/pr1.jpeg">
+        <img src="img/gallery/pr1.jpeg" alt="pr1">
+    </a>
+    <a href="img/gallery/pr2.jpeg">
+        <img src="img/gallery/pr2.jpeg" alt="pr2">
+    </a>
+    <a href="img/gallery/pr3.jpeg">
+        <img src="img/gallery/pr3.jpeg" alt="pr3">
+    </a>
+    <a href="img/gallery/musician.jpeg">
+        <img src="img/gallery/musician.jpeg" alt="musician">
+    </a>
+    <a href="img/gallery/screen.jpeg">
+        <img src="img/gallery/screen.jpeg" alt="screen">
+    </a>
+    <a href="img/gallery/neon.jpeg">
+        <img src="img/gallery/neon.jpeg" alt="neon">
+    </a>
+    <a href="img/gallery/worlds.jpg">
+        <img src="img/gallery/worlds.jpg" alt="worlds">
+    </a>
+    <a href="img/gallery/shelter.jpg">
+        <img src="img/gallery/shelter.jpg" alt="shelter">
+    </a>
+    <a href="img/gallery/nurture.jpg">
+        <img src="img/gallery/nurture.jpg" alt="nurture">
+    </a>
+    <p> </p>
+</div>
+</div>
+
+<div id="footer">
+        <h2>Porter Robinson</h2>
+        <h4>Everything we need is already here.</h4>
+    </div> 
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#header').parallax({
+            imageSrc: 'img/porter2.jpg'
+        });
+    });
+
+    lightGallery(document.querySelector('.gallery'));
+
+</script>
+
+</body>
+
+</html>
